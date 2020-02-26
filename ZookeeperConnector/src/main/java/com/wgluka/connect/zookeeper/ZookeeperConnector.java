@@ -65,7 +65,6 @@ public class ZookeeperConnector {
                 continue;
             }
             Enumeration<InetAddress> addressEnumeration = networkInterface.getInetAddresses();
-            List<String> addressStrList = new ArrayList<>();
             while (addressEnumeration.hasMoreElements()) {
                 InetAddress address = addressEnumeration.nextElement();
                 if ((address instanceof Inet4Address)) {
